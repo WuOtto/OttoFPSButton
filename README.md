@@ -8,7 +8,7 @@
 
 ## 效果图
 <p align="center">
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoFPSButtonDemo1.gif" width="380"/>
+<img src="http://ouem5hcj9.bkt.clouddn.com/OttoFPSButtonDemo1.gif?r=100" width="380"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="http://ouem5hcj9.bkt.clouddn.com/OttoFPSButtonDemo2.gif" width="380"/>
 </p>
