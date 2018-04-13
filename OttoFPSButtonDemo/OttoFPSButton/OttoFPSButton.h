@@ -11,7 +11,6 @@
 @interface OttoFPSButton : UIButton
 
 + (instancetype)setTouchWithFrame:(CGRect)frame
-                      titleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont
                  backgroundColor:(UIColor *)backgroundColor
                  backgroundImage:(UIImage *)backgroundImage;

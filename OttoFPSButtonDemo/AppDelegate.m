@@ -26,7 +26,7 @@
     
     CGRect frame = CGRectMake(0, 300, 80, 30);
     UIColor *btnBGColor = [UIColor colorWithWhite:0.000 alpha:0.700];
-    OttoFPSButton *btn = [OttoFPSButton setTouchWithFrame:frame titleColor:[UIColor whiteColor] titleFont:[UIFont systemFontOfSize:15] backgroundColor:btnBGColor backgroundImage:nil];
+    OttoFPSButton *btn = [OttoFPSButton setTouchWithFrame:frame titleFont:[UIFont systemFontOfSize:15] backgroundColor:btnBGColor backgroundImage:nil];
     [self.window addSubview:btn];
     
     return YES;

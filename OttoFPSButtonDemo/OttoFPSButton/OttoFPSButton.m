@@ -8,7 +8,7 @@
 
 #import "OttoFPSButton.h"
 
-#define screenW   [UIScreen mainScreen].bounds.size.width
+#define screenW  [UIScreen mainScreen].bounds.size.width
 #define screenH  [UIScreen mainScreen].bounds.size.height
 
 @implementation OttoFPSButton
@@ -16,20 +16,16 @@
     CADisplayLink *_link;
     NSUInteger _count;
     NSTimeInterval _lastTime;
-    NSTimeInterval _llll;
 }
 
 + (instancetype)setTouchWithFrame:(CGRect)frame
-                      titleColor:(UIColor *)titleColor
                        titleFont:(UIFont *)titleFont
                  backgroundColor:(UIColor *)backgroundColor
                  backgroundImage:(UIImage *)backgroundImage{
-    return [[self alloc] initWithframe:frame titleColor:titleColor titleFont:titleFont backgroundColor:backgroundColor backgroundImage:backgroundImage];
+    return [[self alloc] initWithframe:frame titleFont:titleFont backgroundColor:backgroundColor backgroundImage:backgroundImage];
 }
 
-
 - (instancetype)initWithframe:(CGRect)frame
-                  titleColor:(UIColor *)titleColor
                    titleFont:(UIFont *)titleFont
              backgroundColor:(UIColor *)backgroundColor
              backgroundImage:(UIImage *)backgroundImage{
@@ -54,7 +50,6 @@
     }
     return self;
 }
-
 
 - (void)tick:(CADisplayLink *)link {
     if (_lastTime == 0) {
@@ -82,7 +77,6 @@
     [attText addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:15.0] range:NSMakeRange(attText.length - 3, 3)];
     
     [self setAttributedTitle:attText forState:UIControlStateNormal];
-
 }
 
 - (void)changePostion:(UIPanGestureRecognizer *)pan{
@@ -148,6 +142,5 @@
     }
     return originalFrame;
 }
-
 
 @end
